@@ -1,3 +1,233 @@
+* {
+  box-sizing: border-box;
+}
 
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'titillium_bdbold';
+  src: url("../fonts/Titilium/titillium-bold-webfont.eot");
+  src: url("../fonts/Titilium/titillium-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Titilium/titillium-bold-webfont.woff2") format("woff2"), url("../fonts/Titilium/titillium-bold-webfont.woff") format("woff"), url("../fonts/Titilium/titillium-bold-webfont.ttf") format("truetype"), url("../fonts/Titilium/titillium-bold-webfont.svg#titillium_bdbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'titilliumthin_upright';
+  src: url("../fonts/Titilium/titillium-thinupright-webfont.eot");
+  src: url("../fonts/Titilium/titillium-thinupright-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Titilium/titillium-thinupright-webfont.woff2") format("woff2"), url("../fonts/Titilium/titillium-thinupright-webfont.woff") format("woff"), url("../fonts/Titilium/titillium-thinupright-webfont.ttf") format("truetype"), url("../fonts/Titilium/titillium-thinupright-webfont.svg#titilliumthin_upright") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'titilliumregular';
+  src: url("../fonts/Titilium/titillium-regular-webfont.eot");
+  src: url("../fonts/Titilium/titillium-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Titilium/titillium-regular-webfont.woff2") format("woff2"), url("../fonts/Titilium/titillium-regular-webfont.woff") format("woff"), url("../fonts/Titilium/titillium-regular-webfont.ttf") format("truetype"), url("../fonts/Titilium/titillium-regular-webfont.svg#titilliumregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'titilliumbold';
+  src: url("../fonts/Titilium/titillium-semibold-webfont.eot");
+  src: url("../fonts/Titilium/titillium-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Titilium/titillium-semibold-webfont.woff2") format("woff2"), url("../fonts/Titilium/titillium-semibold-webfont.woff") format("woff"), url("../fonts/Titilium/titillium-semibold-webfont.ttf") format("truetype"), url("../fonts/Titilium/titillium-semibold-webfont.svg#titilliumbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'existencestencil_light';
+  src: url("../fonts/Existence/existence-stencillight-webfont.eot");
+  src: url("../fonts/Existence/existence-stencillight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Existence/existence-stencillight-webfont.woff2") format("woff2"), url("../fonts/Existence/existence-stencillight-webfont.woff") format("woff"), url("../fonts/Existence/existence-stencillight-webfont.ttf") format("truetype"), url("../fonts/Existence/existence-stencillight-webfont.svg#existencestencil_light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'existencelight';
+  src: url("../fonts/Existence/existence-light-webfont.eot");
+  src: url("../fonts/Existence/existence-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Existence/existence-light-webfont.woff2") format("woff2"), url("../fonts/Existence/existence-light-webfont.woff") format("woff"), url("../fonts/Existence/existence-light-webfont.ttf") format("truetype"), url("../fonts/Existence/existence-light-webfont.svg#existencelight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'existenceunicase_light';
+  src: url("../fonts/Existence/existence-unicaselight-webfont.eot");
+  src: url("../fonts/Existence/existence-unicaselight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Existence/existence-unicaselight-webfont.woff2") format("woff2"), url("../fonts/Existence/existence-unicaselight-webfont.woff") format("woff"), url("../fonts/Existence/existence-unicaselight-webfont.ttf") format("truetype"), url("../fonts/Existence/existence-unicaselight-webfont.svg#existenceunicase_light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latohairline';
+  src: url("../fonts/Lato/lato-hairline-webfont.eot");
+  src: url("../fonts/Lato/lato-hairline-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline-webfont.woff2") format("woff2"), url("../fonts/Lato/lato-hairline-webfont.woff") format("woff"), url("../fonts/Lato/lato-hairline-webfont.ttf") format("truetype"), url("../fonts/Lato/lato-hairline-webfont.svg#latohairline") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/Lato/lato-light-webfont.eot");
+  src: url("../fonts/Lato/lato-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light-webfont.woff2") format("woff2"), url("../fonts/Lato/lato-light-webfont.woff") format("woff"), url("../fonts/Lato/lato-light-webfont.ttf") format("truetype"), url("../fonts/Lato/lato-light-webfont.svg#latolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/Lato/lato-regular-webfont.eot");
+  src: url("../fonts/Lato/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular-webfont.woff2") format("woff2"), url("../fonts/Lato/lato-regular-webfont.woff") format("woff"), url("../fonts/Lato/lato-regular-webfont.ttf") format("truetype"), url("../fonts/Lato/lato-regular-webfont.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latothin';
+  src: url("../fonts/Lato/lato-thin-webfont.eot");
+  src: url("../fonts/Lato/lato-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-thin-webfont.woff2") format("woff2"), url("../fonts/Lato/lato-thin-webfont.woff") format("woff"), url("../fonts/Lato/lato-thin-webfont.ttf") format("truetype"), url("../fonts/Lato/lato-thin-webfont.svg#latothin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  font-family: "latohairline", sans-serif;
+  background-image: url("../images/layer.jpg");
+  background-size: 100% auto;
+  padding-bottom: 44%;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+header h1 {
+  font-size: 90px;
+}
+header h2 {
+  font-size: 48px;
+}
+header h3 {
+  font-size: 24px;
+}
+header ul {
+  list-style-type: none;
+}
+
+.mainWidth {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid-container .row:after,
+.grid-container .row:before {
+  display: table;
+  clear: both;
+  content: '';
+}
+.grid-container [class*='col-'] {
+  float: left;
+  min-height: 1px;
+  border: 1px solid red;
+  height: 100px;
+}
+.grid-container .col-1 {
+  width: 8.33333%;
+}
+.grid-container .col-2 {
+  width: 16.66667%;
+}
+.grid-container .col-3 {
+  width: 25%;
+}
+.grid-container .col-4 {
+  width: 33.33333%;
+}
+.grid-container .col-5 {
+  width: 41.66667%;
+}
+.grid-container .col-6 {
+  width: 50%;
+}
+.grid-container .col-7 {
+  width: 58.33333%;
+}
+.grid-container .col-8 {
+  width: 66.66667%;
+}
+.grid-container .col-9 {
+  width: 75%;
+}
+.grid-container .col-10 {
+  width: 83.33333%;
+}
+.grid-container .col-11 {
+  width: 91.66667%;
+}
+.grid-container .col-12 {
+  width: 100%;
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+  .grid-container [class*="col-"] {
+    float: none;
+    width: auto;
+    background-color: blue;
+  }
+}
+.icons {
+  background-image: url("../images/icons/header/layer.png");
+  background-size: 100% auto;
+  padding-bottom: 20%;
+}
 
 /*# sourceMappingURL=style.css.map */
