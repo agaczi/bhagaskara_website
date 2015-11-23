@@ -4,6 +4,15 @@
 
 body{
   //background-color: red;
+
+}
+
+html {
+  font-size: 30px;
+}
+
+.clear{
+  clear:both;
 }
 
 @import '_reset';
@@ -13,25 +22,24 @@ header{
   font-family: "latohairline", sans-serif;
   background-image: url('../images/layer.jpg');
   background-size: 100% auto;
-  padding-bottom: 44%;
+  padding-bottom: 65%;
   background-repeat: no-repeat;
   width: 100%;
+  height: 0;
   color: white;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 1%;
 
   h1{
-    font-size: 90px;
+    font-size: 2rem;
   }
   h2{
-    font-size: 48px;
-  }
-  h3{
-    font-size: 24px;
+    font-size: 1.456rem;
   }
   ul{
     list-style-type: none;
     li {
+      margin: 30px;
     }
   }
 }
@@ -66,7 +74,6 @@ header{
       float: left;
       min-height: 1px;
       border: 1px solid red;
-      height: 100px;
     }
     @for $i from 1 through 12 {
       .col-#{$i} {
@@ -74,22 +81,6 @@ header{
       }
     }
   }
-
-
-  //.middleRow {
-  //  margin-top: 20px;
-  //  margin-bottom: 20px;
-  //  ul {
-  //    margin: 0;
-  //    padding: 0;
-  //    list-style-type: none;
-  //    li {
-  //      background-color: blue;
-  //      height: 23px;
-  //      margin-top: 7px;
-  //    }
-  //  }
-  //}
 
   @media (max-width: 500px) and (orientation: portrait) {
     .grid-container [class*="col-"] {
@@ -99,9 +90,129 @@ header{
     }
   }
 
-
 .icons{
   background-image: url('../images/icons/header/layer.png');
-  background-size: 100% auto;
-  padding-bottom: 20%;
+  background-size: 83% auto;
+  background-position: center;
+  padding-bottom: 109%;
+  width: 100%;
+  height: 0;
+  display: block;
+  background-repeat: no-repeat;
+  img {
+    width:30%;
+    padding-top: 37%;
+  }
+}
+
+.down{
+  margin-top: 180px;
+}
+
+.down1{
+  margin-top: 50px;
+}
+
+ //MOJE NIEUDANE PRÓBY Z OSTATNIM WIERSZEM ZE STRZAŁKĄ 108-125
+
+.arrow-container {
+  width: 10%;
+  max-width: 100%;
+  border:1px solid red;
+  display:inline-block;
+  background-color: green;
+    img{
+      margin-top: 10%;
+    }
+}
+
+//STICKY MENU
+
+.menu{
+
+  font-weight: bold;
+
+    p {
+      font-family: "existencelight", sans-serif;
+      color: grey;
+    }
+    span{
+      font-family: "existencelight", sans-serif;
+      color: deeppink;
+    }
+}
+
+.stickyMenu {
+  padding-bottom: 6%;
+  text-align: center;
+  font-family: "latohairline", sans-serif;
+  width: 100%;
+  background-color: white;
+  font-size: 18px;
+
+  p {
+    float: left;
+    font-size: 280%;
+    padding-top: 7%;
+    width: 20%;
+
+  }
+  ul {
+    float: right;
+    text-align: right;
+    padding-top: 9%;
+    padding-left: 2%;
+    width:70%;
+
+    li {
+      display: inline-block;
+      padding-left: 3%;
+      font-size: 18px;
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-top: 5%;
+      font-size: 1em;
+      font-family: "latoregular", sans-serif;
+      color: grey;
+    }
+  }
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+}
+
+//SECOND SECTION
+
+.buildWithLove{
+  height: 800px;
+  background-color: #eeeeee;
+  padding-top: 250px;
+  font-family: "latolight", sans-serif;
+  text-align: center;
+
+    div{
+      color: #676767;
+
+      h1{
+        font-size: 170%;
+        padding-bottom: 10%;
+      }
+
+      p{
+        font-size: 119%;
+        line-height: 180%;
+
+      }
+    }
+
+  }
+
+//THIRD SECTION
+
+.aboutUs{
+  height: 800px;
 }
