@@ -114,8 +114,6 @@ header{
   margin-top: 50px;
 }
 
- //MOJE NIEUDANE PRÓBY Z OSTATNIM WIERSZEM ZE STRZAŁKĄ 108-125
-
 .arrow-container {
   width: 10%;
   max-width: 100%;
@@ -215,29 +213,28 @@ header{
 //THIRD SECTION
 
 
-.aboutUs{
+.aboutUs {
   height: 800px;
   width: 100%;
   font-family: "latolight", sans-serif;
   padding-top: 8%;
 
-  .headerAboutUs{
-      border: 1px solid green;
-      margin-left: 30%;
-      height: 100%;
-      width: 20%;
+  .headerAboutUs {
+    border: 1px solid green;
+    margin-left: 30%;
+    height: 100%;
+    width: 20%;
 
-  }
-
-    img{
+    img {
       float: left;
-      width:49%;
+      width: 49%;
 
-      #logotype{
+      #logotype {
         float: none;
         width: 30%;
       }
     }
+  }
 }
 
 .insideBox {
@@ -257,8 +254,17 @@ header{
   }
 }
 
-.buttonLearn{
-  margin-top: 20%;
+.macPhotos{
+  float: left;
+  width: 45%;
+  border: 1px solid blue;
+    img{
+      width: 109%;
+    }
+}
+
+.buttonLearn {
+  margin-top: 18%;
   background: #9f449b;
   border-radius: 10%;
   color: white;
@@ -268,10 +274,72 @@ header{
   font-size: 100%;
   text-decoration: none;
   font-family: "latolight", sans-serif;
+  }
 
-  //box-shadow:
-  //-webkit-box-shadow: 0px 2px 13px 0px rgba(159,68,155,1);
-  //-moz-box-shadow: 0px 2px 13px 0px rgba(159,68,155,1);
-  //box-shadow: 0px 2px 13px 0px rgba(159,68,155,1);
+// FOURTH SECTION
 
+.backgroundLayer {
+  background: url('../images/layer_down.jpg');
+  background-size: 100% auto;
+  font-size: 100%;
+  color: white;
+  text-align: center;
+  font-family: "latolight", sans-serif bold;
+  background-repeat: no-repeat;
+  padding-bottom: 65%;
+
+}
+
+.contentKnowledgeBox {
+
+  .knowledge {
+    width: 30%;
+    max-width: 100%;
+    border:1px solid red;
+    display:inline-block;
+    padding-top: 20%;
+  }
+
+  .icons img{
+    width: 40%;
+    padding-top: 40%;
+  }
+
+  p{
+    font-size: 350%;
+  }
+}
+
+//FIFTH SECTION
+
+.ourTeam{
+  background-size: 100% auto;
+  color: #cdcdcd;
+  text-align: center;
+  font-family: "latolight", sans-serif bold;
+  background-repeat: no-repeat;
+  padding-bottom: 65%;
+
+  .headerOurTeam{
+    border: 1px solid mediumvioletred;
+  }
+}
+
+.layerBoxes{
+  height: 150px;
+  border: 1px solid greenyellow;
+
+  .prevArrow{
+    float: left;
+    border: 1px solid blue;
+    .icons img{
+      width: 40%;
+    }
+
+  }
+  .nextArrow{
+    float: right;
+    border: 1px solid blue;
+
+  }
 }

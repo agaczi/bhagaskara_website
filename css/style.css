@@ -350,11 +350,11 @@ header ul li {
   height: 100%;
   width: 20%;
 }
-.aboutUs img {
+.aboutUs .headerAboutUs img {
   float: left;
   width: 49%;
 }
-.aboutUs img #logotype {
+.aboutUs .headerAboutUs img #logotype {
   float: none;
   width: 30%;
 }
@@ -374,8 +374,17 @@ header ul li {
   line-height: 170%;
 }
 
+.macPhotos {
+  float: left;
+  width: 45%;
+  border: 1px solid blue;
+}
+.macPhotos img {
+  width: 109%;
+}
+
 .buttonLearn {
-  margin-top: 20%;
+  margin-top: 18%;
   background: #9f449b;
   border-radius: 10%;
   color: white;
@@ -385,6 +394,60 @@ header ul li {
   font-size: 100%;
   text-decoration: none;
   font-family: "latolight", sans-serif;
+}
+
+.backgroundLayer {
+  background: url("../images/layer_down.jpg");
+  background-size: 100% auto;
+  font-size: 100%;
+  color: white;
+  text-align: center;
+  font-family: "latolight", sans-serif bold;
+  background-repeat: no-repeat;
+  padding-bottom: 65%;
+}
+
+.contentKnowledgeBox .knowledge {
+  width: 30%;
+  max-width: 100%;
+  border: 1px solid red;
+  display: inline-block;
+  padding-top: 20%;
+}
+.contentKnowledgeBox .icons img {
+  width: 40%;
+  padding-top: 40%;
+}
+.contentKnowledgeBox p {
+  font-size: 350%;
+}
+
+.ourTeam {
+  background-size: 100% auto;
+  color: #cdcdcd;
+  text-align: center;
+  font-family: "latolight", sans-serif bold;
+  background-repeat: no-repeat;
+  padding-bottom: 65%;
+}
+.ourTeam .headerOurTeam {
+  border: 1px solid mediumvioletred;
+}
+
+.layerBoxes {
+  height: 150px;
+  border: 1px solid greenyellow;
+}
+.layerBoxes .prevArrow {
+  float: left;
+  border: 1px solid blue;
+}
+.layerBoxes .prevArrow .icons img {
+  width: 40%;
+}
+.layerBoxes .nextArrow {
+  float: right;
+  border: 1px solid blue;
 }
 
 /*# sourceMappingURL=style.css.map */
