@@ -49,6 +49,7 @@ header{
   width: 80%;
   margin: 0 auto;
   position: relative;
+  border: 1px solid blue;
 }
 
 
@@ -190,7 +191,7 @@ header{
 .buildWithLove{
   height: 800px;
   background-color: #eeeeee;
-  padding-top: 250px;
+  padding-top: 11%;
   font-family: "latolight", sans-serif;
   text-align: center;
 
@@ -203,8 +204,8 @@ header{
       }
 
       p{
-        font-size: 119%;
-        line-height: 180%;
+        font-size: 105%;
+        line-height: 170%;
 
       }
     }
@@ -213,6 +214,64 @@ header{
 
 //THIRD SECTION
 
+
 .aboutUs{
   height: 800px;
+  width: 100%;
+  font-family: "latolight", sans-serif;
+  padding-top: 8%;
+
+  .headerAboutUs{
+      border: 1px solid green;
+      margin-left: 30%;
+      height: 100%;
+      width: 20%;
+
+  }
+
+    img{
+      float: left;
+      width:49%;
+
+      #logotype{
+        float: none;
+        width: 30%;
+      }
+    }
+}
+
+.insideBox {
+  margin-top: 18%;
+
+  .textBox {
+    float: right;
+    width: 49%;
+    color: #676767;
+
+    p {
+      width: 100%;
+      border: 1px solid red;
+      font-size: 118%;
+      line-height: 170%;
+    }
+  }
+}
+
+.buttonLearn{
+  margin-top: 20%;
+  background: #9f449b;
+  border-radius: 10%;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 100%;
+  text-decoration: none;
+  font-family: "latolight", sans-serif;
+
+  //box-shadow:
+  //-webkit-box-shadow: 0px 2px 13px 0px rgba(159,68,155,1);
+  //-moz-box-shadow: 0px 2px 13px 0px rgba(159,68,155,1);
+  //box-shadow: 0px 2px 13px 0px rgba(159,68,155,1);
+
 }
