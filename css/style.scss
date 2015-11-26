@@ -22,7 +22,7 @@ header{
   font-family: "latohairline", sans-serif;
   background-image: url('../images/layer.jpg');
   background-size: 100% auto;
-  padding-bottom: 65%;
+  padding-bottom: 60%;
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
@@ -117,9 +117,7 @@ header{
 .arrow-container {
   width: 10%;
   max-width: 100%;
-  border:1px solid red;
   display:inline-block;
-  background-color: green;
     img{
       margin-top: 10%;
     }
@@ -142,24 +140,25 @@ header{
 }
 
 .stickyMenu {
-  padding-bottom: 6%;
+  padding-bottom: 3%;
   text-align: center;
   font-family: "latohairline", sans-serif;
   width: 100%;
   background-color: white;
-  font-size: 18px;
+  z-index: 999;
+  border: 1px solid black;
 
   p {
     float: left;
     font-size: 280%;
-    padding-top: 7%;
+    padding-top: 4%;
     width: 20%;
 
   }
   ul {
     float: right;
     text-align: right;
-    padding-top: 9%;
+    padding-top: 6%;
     padding-left: 2%;
     width:70%;
 
@@ -187,11 +186,11 @@ header{
 //SECOND SECTION
 
 .buildWithLove{
-  height: 800px;
   background-color: #eeeeee;
-  padding-top: 11%;
+  padding-top: 10%;
   font-family: "latolight", sans-serif;
   text-align: center;
+  padding-bottom: 10%;
 
     div{
       color: #676767;
@@ -204,39 +203,34 @@ header{
       p{
         font-size: 105%;
         line-height: 170%;
-
       }
     }
-
   }
 
 //THIRD SECTION
 
-
 .aboutUs {
-  height: 800px;
   width: 100%;
   font-family: "latolight", sans-serif;
-  padding-top: 8%;
+  margin-top: 9%;
+  margin-bottom: 9%;
+  }
 
-  .headerAboutUs {
-    border: 1px solid green;
-    margin-left: 30%;
-    height: 100%;
-    width: 20%;
+.headerAboutUs {
+  border: 1px solid green;
+  width: 30%;
+  margin: 0 auto;
 
-    img {
-      float: left;
-      width: 49%;
+  img {
+    float: left;
+    width: 100%;
 
-      #logotype {
-        float: none;
-        width: 30%;
-      }
+    #logotype {
+      float: none;
+      width: 30%;
     }
   }
 }
-
 .insideBox {
   margin-top: 18%;
 
@@ -256,10 +250,10 @@ header{
 
 .macPhotos{
   float: left;
-  width: 45%;
+  width: 50%;
   border: 1px solid blue;
     img{
-      width: 109%;
+      width: 100%;
     }
 }
 
@@ -281,32 +275,38 @@ header{
 .backgroundLayer {
   background: url('../images/layer_down.jpg');
   background-size: 100% auto;
-  font-size: 100%;
   color: white;
   text-align: center;
-  font-family: "latolight", sans-serif bold;
   background-repeat: no-repeat;
-  padding-bottom: 65%;
-
+  font-family: "latolight", sans-serif;
+  //padding-bottom: 65%;
+  background-position: 0 55%;
+  background-attachment: fixed;
+  padding: 15% 0 15% 0;
 }
 
 .contentKnowledgeBox {
-
+  font-size: 35px;
   .knowledge {
-    width: 30%;
+    width: 10%;
     max-width: 100%;
     border:1px solid red;
     display:inline-block;
-    padding-top: 20%;
+
+
+    .icons{
+      padding-top: 20%;
+    }
   }
 
-  .icons img{
-    width: 40%;
-    padding-top: 40%;
+  img.knowledgeLayer {
+    width: 45%;
+    margin-top: -6%;
   }
-
   p{
-    font-size: 350%;
+    margin-top: 2%;
+    font-size: 100%;
+
   }
 }
 
@@ -318,28 +318,346 @@ header{
   text-align: center;
   font-family: "latolight", sans-serif bold;
   background-repeat: no-repeat;
-  padding-bottom: 65%;
+  margin-top: 5%;
+  margin-bottom: 9%;
 
   .headerOurTeam{
     border: 1px solid mediumvioletred;
   }
+
+  .headerSkills{
+    margin-top: 67%;
+    margin-bottom: 8%;
+
+    //poprawić na RWD
+    //width: 30%;
+    //margin: 0 auto;
+    //
+    //img{
+    //  width: 100%;
+    //}
+
+  }
 }
 
-.layerBoxes{
-  height: 150px;
-  border: 1px solid greenyellow;
+.layerBoxes {
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 4%;
+  width: 10%;
 
-  .prevArrow{
-    float: left;
+  .prevArrow {
+    width: 47%;
+    display: inline-block;
     border: 1px solid blue;
-    .icons img{
-      width: 40%;
     }
 
-  }
-  .nextArrow{
-    float: right;
+  .nextArrow {
+    width: 47%;
+    display: inline-block;
     border: 1px solid blue;
-
   }
+}
+
+.memberPhoto{
+  padding: 38px;
+  float: left;
+  box-sizing: border-box;
+  //border: 1px solid black;
+  width: 33%;
+  font-size: 140%;
+  margin-top: 6%;
+
+    img{
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 35%;
+    }
+    h1{
+      padding-bottom: 10%;
+      font-size: 100%;
+      font-weight: bold;
+      color: #484848;
+    }
+    h2{
+      padding-bottom: 10%;
+      font-size: 80%;
+      color: #8d8d8d;
+    }
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.opacity2 {
+  opacity: 1;
+}
+
+.googleIcon{
+  border-radius: 50%;
+  border: 1px solid #a2a2a2;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding-top: 1%;
+  color: #8d8d8d;
+}
+
+.facebookIcon{
+  border-radius: 50%;
+  border: 1px solid #a2a2a2;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding-top: 1%;
+  color: #8d8d8d;
+}
+
+.gallery{
+  margin: 0 auto;
+}
+
+//SKILLS
+
+.container{
+  //height: 150px;
+  width: 100%;
+
+  //.skillBoxWeb{
+  //  float: left;
+  //  width: 50%;
+  //
+  //    .full span{
+  //      width: 100%;
+  //      height: 5px;
+  //      background-color: #8d8d8d;
+  //    }
+  //}
+
+  .skillBoxWeb, .skillBoxGraphic, .skillBoxHTML, .skillBoxUI {
+    float: left;
+    width: 50%;
+    padding: 3% 3% 0 3%;
+    color: black;
+    font-weight: bold;
+    font-family: "titilliumbold", sans-serif;
+    .name {
+      display: inline-block;
+      text-align: left;
+      width: 49%;
+    }
+    .percentage {
+      display: inline-block;
+      text-align: right;
+      width: 49%;
+    }
+    .full {
+      display: block;
+      width: 100%;
+      background-color: #f0f0f0;
+      height: 15px;
+        .partial {
+          display: block;
+          //width: 100%;
+          background-color: #9f449b;
+          height: 15px;
+
+        }
+        .web{
+          width: 80%;
+        }
+        .graphic{
+          width: 70%;
+        }
+        .html{
+          width: 75%;
+        }
+        .ui{
+          width: 85%;
+      }
+    }
+  }
+}
+
+//SEVENTH SECTION
+
+.quotes{
+  background-color: #eeeeee;
+  height: 600px;
+}
+
+//EIGHT SECTION
+
+  .headerOurPortfolio{
+    width: 30%;
+    margin: 0 auto;
+
+    img{
+      width: 100%;
+      }
+  }
+
+.panel{
+  width: 32%;
+  margin: 0 auto{
+  }
+
+  li {
+    //margin-top: 10%;
+    border: 1.5px solid black;
+    border-radius: 10%;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    text-decoration: none;
+    font-family: "titilliumbold", sans-serif;
+    padding: 6px 15px;
+    width: 70px;
+  }
+}
+
+.gallery{
+  margin: 0 auto;
+  width: 90%;
+  display: block;
+  img{
+      width: 100%;
+    }
+}
+
+.title{
+  font-family: "latolight", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5%;
+  font-size: 112%;
+}
+.margin{
+  margin-bottom: 6%;
+}
+
+.buttonWatch{
+  background: #9f449b;
+  border-radius: 10%;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 100%;
+  text-decoration: none;
+  margin: 0 auto;
+  font-family: "latolight", sans-serif;
+  display: block;
+}
+
+.hashes {
+  margin: 0 auto;
+  padding-top: 3%;
+  display: inherit;
+  text-align: center;
+  width: 100%;
+
+  li{
+    font-family: "latolight", sans-serif;
+    text-align: center;
+    font-size: 100%;
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+//SECTION FORMULAIRE
+
+.formulaire{
+  margin-top: 5%;
+}
+
+.headerGetInTouch{
+  width: 30%;
+  margin: 0 auto;
+
+  img{
+    width: 100%;
+  }
+}
+
+#form {
+  width: 48%;
+  float: left;
+
+  input {
+    width: 100%;
+    height: 40px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+      .messageWindow {
+        height: 200px;
+      }
+  }
+  textarea {
+    width: 100%;
+    height: 180px;
+    resize: none;
+  }
+}
+
+.inputBox {
+  margin-top: 5%;
+  font-family: "titillium", sans-serif;
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+  margin-right: 5px;
+
+  .textBox {
+    float: right;
+    width: 48%;
+    color: #676767;
+
+    p {
+      width: 49%;
+      border: 1px solid red;
+      line-height: 170%;
+
+    }
+  }
+}
+
+.mainSpan {
+  font-size: 18px;
+  line-height: 25px;
+}
+.middleSpan {
+  font-size: 23px;
+  line-height: 25px;
+
+}
+
+.buttonSendMessage{
+  background: #9f449b;
+  border-radius: 10%;
+  color: white;
+  padding: 10px 20px;
+  font-size: 100%;
+  text-decoration: none;
+  margin: 0 auto;
+  font-family: "latolight", sans-serif;
+  margin-top: 3%;
+
+}
+
+
+.mediaLogos{
+  display: inline-block;
+  float: right;
+  width: 48%;
+  position: absolute;
+  bottom: 0;
+  padding-left: 42px;
+
+  img{
+      width: 45px;
+    }
 }
