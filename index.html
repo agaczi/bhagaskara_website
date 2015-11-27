@@ -5,10 +5,13 @@
     <title></title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+
 </head>
-<div>
 
 <!--FIRST SECTION - FRONT-->
     <header>
@@ -45,21 +48,21 @@
 
 <!--STICKY MENU-->
 
-    <!--<div class="stickyMenu">-->
-        <!--<div class="mainWidth menu">-->
-            <!--<p>Bhagas<span class="logoColor">kara</span>.</p>-->
-            <!--<ul>-->
-                <!--<li><a href="#">Home</a></li>-->
-                <!--<li><a href="#">About</a></li>-->
-                <!--<li><a href="#">Team</a></li>-->
-                <!--<li><a href="#">Services</a></li>-->
-                <!--<li><a href="#">Portfolio</a></li>-->
-                <!--<li><a href="#">Blog</a></li>-->
-                <!--<li><a href="#">Contact</a></li>-->
-            <!--</ul>-->
-            <!--<div class="clear"></div>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="stickyMenu">
+        <div class="mainWidth menu">
+            <p>Bhagas<span class="logoColor">kara</span>.</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
 
 <!--SECOND SECTION-->
     <section class="buildWithLove">
@@ -104,9 +107,12 @@
                         Maecenas interdum dignissim lorem quis auctor. Donec sit amet
                         nulla nisl, aliquam pretium ipsum. Pellentesque sodales ipsum et
                         enim rutrum adipiscing. Quisque tincidunt mattis sapien,
-                        vel posuere.</p>
+                        vel posuere.
+                    </p>
                     <button class="buttonLearn">Learn more</button>
                 </div>
+                <div class="clear"></div>
+            </div>
             </div>
         </div>
     </section>
@@ -116,10 +122,13 @@
     <section class="backgroundLayer">
         <div class="mainWidth">
             <div class="contentKnowledgeBox">
-                <div class="knowledge"><a href="#" class="icons"><img src="images/icons/knowledge.png"></a></div>
+                <div class="knowledge">
+                    <a href="#" class="icons">
+                    <img class="knowledgeLayer" src="images/icons/knowledge.png">
+                    </a>
+                </div>
                 <p>We lorem and ipsum your aliquam</p>
             </div>
-
         </div>
     </section>
 
@@ -127,18 +136,335 @@
 
     <section class="ourTeam">
         <div class="mainWidth">
-            <div class="headerOurTeam"><a href="#"><img src="images/header/our-team.png"></a></div>
-                <div class="layerBoxes">
-                    <div class="prevArrow"><a href="#" class="icons"><img src="images/small_arrow_left.png"></a></div>
-                    <div class="nextArrow"><a href="#" class="icons"><img src="images/small_arrow_right.png"></a></div>
+            <div class="headerOurTeam">
+                <a href="#">
+                    <img src="images/header/our-team.png">
+                </a>
+            </div>
+            <div class="layerBoxes">
+                <img class="prevArrow" src="images/icons/arrowBoxLeft.png">
+                <img class="nextArrow" src="images/icons/arrowRight.png">
+            </div>
+            <div class="ourTeamSlider">
+                <ul class="gallery">
+                  <li>
+                      <div class="memberPhoto">
+                          <img src ="images/members/memb2.jpg">
+                          <h1>AGATA MACIEJEWSKA</h1>
+                          <h2>CEO / Marketing Guru</h2>
+                          <div class="mediaLogosSlider">
+                              <a href="http://facebook.com/"><img src="images/icons/facebookIcon.png"></a>
+                              <a><img src="images/icons/googleIcon.png"></a>
+                          </div>
+                      </div>
+                  </li>
+
+                  <li>
+                      <div class="memberPhoto" data-web="85%" data-graphic="" data-html="" data-ui="">
+                          <img src ="images/members/memb1.jpg">
+                          <h1>AGATA MACIEJEWSKA</h1>
+                          <h2>CEO / Marketing Guru</h2>
+                          <div class="mediaLogosSlider">
+                              <a href="http://facebook.com/"><img src="images/icons/facebookIcon.png"></a>
+                              <img src="images/icons/googleIcon.png">
+                          </div>
+                      </div>
+                  </li>
+
+                  <li>
+                      <div class="memberPhoto">
+                          <img src ="images/members/memb3.jpg">
+                          <h1>AGATA MACIEJEWSKA</h1>
+                          <h2>CEO / Marketing Guru</h2>
+                          <div class="mediaLogosSlider">
+                              <a href="http://facebook.com/"><img src="images/icons/facebookIcon.png"></a>
+                              <img src="images/icons/googleIcon.png">
+                          </div>
+                      </div>
+                  </li>
+
+                </ul>
+            </div>
+            <div class="headerSkills">
+                <a href="#">
+                    <img src="images/header/our_skills.png">
+                </a>
+            </div>
+            <section class="container">
+                <div class="skillBoxWeb">
+                    <span class="name">WEB DESIGN</span>
+                    <span class="percentage">90%</span>
+                    <br>
+                    <br>
+                    <span class="full"><span class="partial web"></span></span>
                 </div>
-                <div class="clear">
-                <div class="sliderMenu">
-                    Miejsce na slider menu
+                <div class="skillBoxGraphic">
+                    <span class="name">GRAPHIC DESIGN</span>
+                    <span class="percentage">70%</span>
+                    <br>
+                    <br>
+                    <span class="full"><span class="partial graphic"></span></span>
                 </div>
-            <div class="headerOurSkills"><a href="#"><img src="images/header/our_skills.png"></a></div>
+                <div class="clear"></div>
+                <div class="skillBoxHTML">
+                    <span class="name">HTML / CSS</span>
+                    <span class="percentage">75%</span>
+                    <br>
+                    <br>
+                    <span class="full"><span class="partial html"></span></span>
+                </div>
+                <div class="skillBoxUI">
+                    <span class="name">UI / UX</span>
+                    <span class="percentage">85%</span>
+                    <br>
+                    <br>
+                    <span class="full"><span class="partial ui"></span></span>
+                </div>
+                <div class="clear"></div>
+            </section>
         </div>
     </section>
 
+<!--SIXTH SECTION-->
+
+    <section class="backgroundLayer">
+        <div class="mainWidth">
+            <div class="contentKnowledgeBox">
+                <div class="knowledge">
+                    <a href="#" class="icons">
+                        <img class="knowledgeLayer" src="images/icons/bubble.png">
+                    </a>
+                </div>
+                <p>Our services will lorem and ipsum
+                    your aliquam</p>
+            </div>
+        </div>
+    </section>
+
+<!--SEVENTH SECTION-->
+
+    <section class="quotes">
+        <div class="mainWidth">
+
+
+            <div class="grid-container">
+                <div class="row">
+                    <div class="col-3 numbers">
+                        <p>365</p>
+                        <br>
+                        <h1>Lorem ipsum</h1>
+                    </div>
+                    <div class="col-3 numbers">
+                        <p>98%</p>
+                        <br>
+                        <h1>Lorem ipsum</h1>
+                    </div>
+                    <div class="col-3 numbers">
+                        <p>69</p>
+                        <br>
+                        <h1>Lorem ipsum</h1>
+                    </div>
+                    <div class="col-3 numbers">
+                        <p>1 642</p>
+                        <br>
+                        <h1>Lorem ipsum</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class=" col-12 quotesSlider1">
+                        <div class="quotesSection">
+
+                            <div class="quotesPhoto">
+                                <img src ="images/members/memb1.jpg">
+                                <h1>“Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                                    condimentum. Duis mollis, est non commodo luctus, nisi erat”</h1>
+                                <h2>LESALE CHRISTOPER, PINTEREST</h2>
+                            </div>
+                        </div>
+                        <div class="quotesSection">
+                            <div class="quotesPhoto">
+                                <img src ="images/members/memb2.jpg">
+                                <h1>“Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                                    condimentum. Duis mollis, est non commodo luctus, nisi erat”</h1>
+                                <h2>CHRIS LEASALETOPER, PINTEREST</h2>
+                            </div>
+                        </div>
+                        <div class="quotesSection">
+                            <div class="quotesPhoto">
+                                <img src ="images/members/memb1.jpg">
+                                <h1>“Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                                    condimentum. Duis mollis, est non commodo luctus, nisi erat”</h1>
+                                <h2>LEA LE CHRISTOPERS, BHAGASKARA</h2>
+                            </div>
+                        </div>
+                        <div class="quotesSection">
+                            <div class="quotesPhoto">
+                                <img src ="images/members/memb3.jpg">
+                                <h1>“Duis mollis, est non commodo luctus, nisi erat”</h1>
+                                <h2>CHRISTOPER SALLEE , FACEBOOK</h2>
+                            </div>
+                        </div>
+                        <div class="quotesSection">
+                            <div class="quotesPhoto">
+                                <img src ="images/members/memb2.jpg">
+                                <h1>“Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                                    condimentum. Duis mollis, est non commodo luctus, nisi erat. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                                    condimentum”</h1>
+                                <h2>LEA LE CHRISTOPERS, GOOGLE+</h2>
+                            </div>
+                        </div>
+                        <div class="quotesSection">
+                            <div class="quotesPhoto">
+                                <img src ="images/members/memb1.jpg">
+                                <h1>“Duis mollis, est non commodo luctus, nisi erat”</h1>
+                                <h2>PERS LELECHRISTO, TUMBLR</h2>
+                            </div>
+                        </div>
+                        <div class="quotesSection">
+                            <div class="quotesPhoto">
+                                <img src ="images/members/memb3.jpg">
+                                <h1>“Fusce dapibus, tellus ac cursus commodo”</h1>
+                                <h2>ELLA E. CHRISTOPEERS, TWITTER</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--EIGHT SECTION-->
+
+    <section class="portfolio">
+        <div class="mainWidth">
+            <div class="headerOurPortfolio margin">
+                <a href="#">
+                    <img src="images/header/our_portfolio.png">
+                </a>
+            </div>
+            <div class="grid-container">
+               <div class="row">
+                   <div class="col-12">
+                       <ul class="panel margin">
+                           <li class="smallButtons"><a>ALL</a></li>
+                           <li class="smallButtons"><a>WEB</a></li>
+                           <li class="smallButtons"><a>APPS</a></li>
+                           <li class="smallButtons"><a>ICONS</a></li>
+                       </ul>
+                   </div>
+                   <div class="row margin">
+                       <div class="col-4">
+                           <img class="gallery" src="images/photoGallery/photo.jpg">
+                           <h1 class="title">Neque Porro Quisquam</h1>
+                           <ul class="hashes">
+                               <li>apps,</li>
+                               <li>icons,</li>
+                               <li>ui</li>
+                           </ul>
+                       </div>
+                       <div class="col-4">
+                           <img class="gallery" src="images/photoGallery/photo2.jpg">
+                           <h1 class="title">Neque Porro Quisquam</h1>
+                           <ul class="hashes">
+                               <li>apps,</li>
+                               <li>icons,</li>
+                               <li>ui</li>
+                           </ul>
+                       </div>
+                       <div class="col-4">
+                           <img class="gallery" src="images/photoGallery/photo3.jpg">
+                           <h1 class="title">Neque Porro Quisquam</h1>
+                           <ul class="hashes">
+                               <li>apps,</li>
+                               <li>icons,</li>
+                               <li>ui</li>
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="row margin">
+                       <div class="col-4">
+                           <img class="gallery" src="images/photoGallery/photo4.jpg">
+                           <h1 class="title">Neque Porro Quisquam</h1>
+                           <ul class="hashes">
+                               <li>apps,</li>
+                               <li>icons,</li>
+                               <li>ui</li>
+                           </ul>
+                       </div>
+                       <div class="col-4">
+                           <img class="gallery" src="images/photoGallery/photo5.jpg">
+                           <h1 class="title">Neque Porro Quisquam</h1>
+                           <ul class="hashes">
+                               <li>apps,</li>
+                               <li>icons,</li>
+                               <li>ui</li>
+                           </ul>
+                       </div>
+                       <div class="col-4">
+                           <img class="gallery" src="images/photoGallery/photo6.jpg">
+                           <h1 class="title">Neque Porro Quisquam</h1>
+                           <ul class="hashes">
+                               <li>apps,</li>
+                               <li>icons,</li>
+                               <li>ui</li>
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="col-12">
+                       <button class="buttonWatch">Watch more</button>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulaire">
+        <div class="mainWidth">
+            <div class="headerGetInTouch margin">
+                <a href="#">
+                    <img src="images/header/get_in_touch.png">
+                </a>
+            </div>
+            <div class="inputBox">
+                <form id="form">
+                    <input type="text" placeholder="Your name" id="name" name="field1">
+                    <span class="formName">Type proper name</span>
+                    <input type="text" placeholder="Your name" id="email" name="filed2">
+                    <span class="formEmail">Type proper e-mail</span>
+                    <textarea placeholder="Your message" id="text" name="field3"></textarea>
+                    <span class="formText">Type proper message</span>
+                </form>
+                <p class="textBox">
+                    <span class="mainSpan">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</span>
+                    <br>
+                    <br>
+                    <span class="middleSpan">1600 Pennsylvania Ave NW, Washington,
+                        DC 20500, United States of America.
+                        <br>
+                        <br>
+                        T: (202) 456-1111
+                        <br>
+                        M: (202) 456-1212
+                    </span>
+                </p>
+                <!--<div class="clear"></div>-->
+                <div class="mediaLogos">
+                    <img src="images/icons/facebookIcon.png">
+                    <img src="images/icons/tumblrIcon.png">
+                    <img src="images/icons/googleIcon.png">
+                </div>
+                <div class="clear"></div>
+            </div>
+            <button class="buttonSendMessage">Send message</button>
+        </div>
+    </section>
+    <footer>
+        <div class="mainWidth">
+            <div class="headerGetInTouch"><a href="#"><img src="images/footerLogo.png"></a></div>
+        </div>
+    </footer>
+
 </body>
 </html>
+
