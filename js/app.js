@@ -1,6 +1,33 @@
 //STICKY MENU
 
-$(document).ready(function(){
+$(document).ready(function() {
+
+
+//HAMBURGER MENU
+
+    function setMenu() {
+        $(window).on('resize', function() {
+            if ($(window).width() < 875) {
+                $('.hamburger').hide();
+                $('.menuBtn').show();
+            } else {
+                $('.hamburger').show();
+                $('.menuBtn').hide();
+                $('.mobileMenu').hide();
+            }
+        });
+    }
+
+    function setClick() {
+        $('.menuBtn').on('click', function() {
+            $('.mobileMenu').toggle();
+        });
+    }
+
+    setMenu();
+    setClick();
+
+//STICKY MENU
 
     function stickyMenu() {
         var menu = $(".menu");
@@ -18,13 +45,14 @@ $(document).ready(function(){
         });
 
     }
-    stickyMenu();
 
+    stickyMenu();
 
 
 ////SLIDER MENU
 
     var member = document.getElementsByClassName('memberPhoto');
+
     function gallerySliderMenu() {
 
         var allPictures = $(".gallery li");
@@ -59,12 +87,11 @@ $(document).ready(function(){
         });
 
     }
+
     gallerySliderMenu();
 
 
-
-
-    // VALIDATION FORMULAIRE
+// VALIDATION FORMULAIRE
 
 
     function checkValidate() {
@@ -111,9 +138,10 @@ $(document).ready(function(){
             }
         })
     }
+
     checkValidate();
 
-    //QUOTES SLIDER MENU
+//QUOTES SLIDER MENU
 
     function slickMenu() {
         $('.quotesSlider1').slick({
@@ -127,7 +155,7 @@ $(document).ready(function(){
 
     slickMenu();
 
-    function ourSkills(member, number){
+    function ourSkills(member, number) {
         console.log(member[number]);
 
         var web = $(member[number]).data("web");
@@ -160,7 +188,6 @@ $(document).ready(function(){
         var percentageUI = $(uiStripe).find('.percentage');
 
 
-
         //console.log(idWeb);
         //console.log(idGraphic);
         //console.log(idHTML);
@@ -169,16 +196,16 @@ $(document).ready(function(){
 
         idWeb.animate({
             width: web
-        },800)
+        }, 800)
         idGraphic.animate({
             width: graphic
-        },800)
+        }, 800)
         idHTML.animate({
             width: html
-        },800)
+        }, 800)
         idStripe.animate({
             width: ui
-        },800)
+        }, 800)
 
         $(percentageWeb[0]).text(web);
         $(percentageGraphic[0]).text(graphic);
@@ -189,6 +216,39 @@ $(document).ready(function(){
     }
 
     ourSkills(member, 1);
+
+
+    function scrollDown() {
+        $('a').click(function () {
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 2000);
+            return false;
+        });
+
+    }
+        scrollDown();
+
+
+
+
+    // grid gallery --->
+
+   
+
+
+
+    //// trick to prevent scrolling when slideshow is visible
+    //window.addEventListener( 'scroll', function() {
+    //    if ( self.isSlideshowVisible ) {
+    //        window.scrollTo( self.scrollPosition ? self.scrollPosition.x : 0, self.scrollPosition ? self.scrollPosition.y : 0 );
+    //    }
+    //    else {
+    //        self.scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+    //    }
+    //});
+
+
 });
 
 
