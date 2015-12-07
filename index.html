@@ -28,17 +28,17 @@
                          </div>
 
                     </div>
-                    <div class="row">
-                          <div class="col-2 down"><a href="#" class="icons"><img src="images/icons/header/insider1.png"></a></div>
-                          <div class="col-2 down"><a href="#" class="icons"><img src="images/icons/header/insider2.png"></a></div>
-                          <div class="col-2 down1"><a href="#" class="icons"><img src="images/icons/header/insider3.png"></a></div>
-                          <div class="col-2 down1"><a href="#" class="icons"><img src="images/icons/header/insider4.png"></a></div>
-                          <div class="col-2 down"><a href="#" class="icons"><img src="images/icons/header/insider5.png"></a></div>
-                          <div class="col-2 down"><a href="#" class="icons"><img src="images/icons/header/insider6.png"></a></div>
+                    <div class="row hamburger">
+                          <div class="col-2 down"><a href="#about" class="icons changing1"><img src="images/icons/header/insider1.png"></a></div>
+                          <div class="col-2 down"><a href="#team" class="icons changing1"><img src="images/icons/header/insider2.png"></a></div>
+                          <div class="col-2 down1"><a href="#services" class="icons changing1"><img src="images/icons/header/insider3.png"></a></div>
+                          <div class="col-2 down1"><a href="#portfolio" class="icons changing1"><img src="images/icons/header/insider4.png"></a></div>
+                          <div class="col-2 down"><a href="#quotations" class="icons changing1"><img src="images/icons/header/insider5.png"></a></div>
+                          <div class="col-2 down"><a href="#contact" class="icons changing1"><img src="images/icons/header/insider6.png"></a></div>
                     </div>
-                    <div class="row">
+                    <div class="row hamburger">
                           <div class="col-12">
-                              <span class="arrow-container"><a href="#" class="icons"><img src="images/icons/header/arrow1.png"></a></span>
+                              <span class="arrow-container"><a href="#stickyM" class="icons changing1"><img src="images/icons/header/arrow1.png" class="higher"></a></span>
                           </div>
                     </div>
                 </div>
@@ -46,45 +46,67 @@
         </div>
     </header>
 
-<!--STICKY MENU-->
+<div class="mobileNav">
+    <div class="menuBtn notVisible">
+        <div></div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-    <div class="stickyMenu">
+    <div class="mobileMenu notVisible">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#quotations">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--STICKY MENU-->
+<div class="blankDiv">
+    <div class="stickyMenu hamburger" id="stickyM">
         <div class="mainWidth menu">
             <p>Bhagas<span class="logoColor">kara</span>.</p>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#quotations">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="clear"></div>
         </div>
     </div>
+</div>
 
 <!--SECOND SECTION-->
     <section class="buildWithLove">
         <div class="mainWidth">
             <div class="grid-container">
                 <div class="row">
-                    <div class="col-3"><a href="#" class="icons"><img src="images/icons/banner/heart.png"></a>
+                    <div class="col-3"><a href="#" class="icons changing1"><img src="images/icons/banner/heartGrey.png"></a>
                         <h1>Build with love</h1>
                         <br>
                         <p>Fusce facilisis velit libero, nec dignissim lacus sagittis non. Sed nec porta ante. Pellentesque habitant morbi tristique senectus et.</p>
                     </div>
-                    <div class="col-3"><a href="#" class="icons"><img src="images/icons/banner/diamond.png"></a>
+                    <div class="col-3"><a href="#" class="icons changing1"><img src="images/icons/banner/diamond.png"></a>
                         <h1>Clean and modern</h1>
                         <br>
                         <p>Fusce facilisis velit libero, nec dignissim lacus sagittis non. Sed nec porta ante. Pellentesque habitant morbi tristique senectus et.</h2>
                     </div>
-                    <div class="col-3"><a href="#" class="icons"><img src="images/icons/banner/cup.png"></a>
+                    <div class="col-3"><a href="#" class="icons changing1"><img src="images/icons/banner/cup.png"></a>
                         <h1>Easy to use</h1>
                         <br>
                         <p>Fusce facilisis velit libero, nec dignissim lacus sagittis non. Sed nec porta ante. Pellentesque habitant morbi tristique senectus et.</h2>
                     </div>
-                    <div class="col-3"><a href="#" class="icons"><img src="images/icons/banner/mobile.png"></a>
+                    <div class="col-3"><a href="#" class="icons changing1"><img src="images/icons/banner/mobile.png"></a>
                         <h1>Fully responsive</h1>
                         <br>
                         <p>Fusce facilisis velit libero, nec dignissim lacus sagittis non. Sed nec porta ante. Pellentesque habitant morbi tristique senectus et.</h2>
@@ -96,7 +118,7 @@
 
     <!--THIRD SECTION-->
 
-    <section class="aboutUs">
+    <section class="aboutUs" id="about">
         <div class="mainWidth">
             <div class="headerAboutUs"><a href="#" id="logotype"><img src="images/header/about-us.png"></a></div>
             <div class="insideBox">
@@ -123,7 +145,7 @@
         <div class="mainWidth">
             <div class="contentKnowledgeBox">
                 <div class="knowledge">
-                    <a href="#" class="icons">
+                    <a href="#" class="icons changing1">
                     <img class="knowledgeLayer" src="images/icons/knowledge.png">
                     </a>
                 </div>
@@ -134,7 +156,7 @@
 
     <!--FIFTH SECTION-->
 
-    <section class="ourTeam">
+    <section class="ourTeam" id="team">
         <div class="mainWidth">
             <div class="headerOurTeam">
                 <a href="#">
@@ -148,9 +170,9 @@
             <div class="ourTeamSlider">
                 <ul class="gallery">
                   <li>
-                      <div class="memberPhoto">
+                      <div class="memberPhoto" data-web="80%" data-graphic="80%" data-html="80%" data-ui="60%">
                           <img src ="images/members/memb2.jpg">
-                          <h1>AGATA MACIEJEWSKA</h1>
+                          <h1>ANNE HATHAWAY</h1>
                           <h2>CEO / Marketing Guru</h2>
                           <div class="mediaLogosSlider">
                               <a href="http://facebook.com/"><img src="images/icons/facebookIcon.png"></a>
@@ -160,9 +182,9 @@
                   </li>
 
                   <li>
-                      <div class="memberPhoto" data-web="85%" data-graphic="" data-html="" data-ui="">
+                      <div class="memberPhoto" data-web="90%" data-graphic="70%" data-html="75%" data-ui="85%">
                           <img src ="images/members/memb1.jpg">
-                          <h1>AGATA MACIEJEWSKA</h1>
+                          <h1>ANNE HATHAWAY</h1>
                           <h2>CEO / Marketing Guru</h2>
                           <div class="mediaLogosSlider">
                               <a href="http://facebook.com/"><img src="images/icons/facebookIcon.png"></a>
@@ -172,9 +194,9 @@
                   </li>
 
                   <li>
-                      <div class="memberPhoto">
+                      <div class="memberPhoto" data-web="80%" data-graphic="60%" data-html="90%" data-ui="50%">
                           <img src ="images/members/memb3.jpg">
-                          <h1>AGATA MACIEJEWSKA</h1>
+                          <h1>ANNE HATHAWAY</h1>
                           <h2>CEO / Marketing Guru</h2>
                           <div class="mediaLogosSlider">
                               <a href="http://facebook.com/"><img src="images/icons/facebookIcon.png"></a>
@@ -227,11 +249,11 @@
 
 <!--SIXTH SECTION-->
 
-    <section class="backgroundLayer">
+    <section class="backgroundLayer" id="services">
         <div class="mainWidth">
             <div class="contentKnowledgeBox">
                 <div class="knowledge">
-                    <a href="#" class="icons">
+                    <a href="#" class="icons changing1">
                         <img class="knowledgeLayer" src="images/icons/bubble.png">
                     </a>
                 </div>
@@ -243,7 +265,7 @@
 
 <!--SEVENTH SECTION-->
 
-    <section class="quotes">
+    <section class="quotes" id="quotations">
         <div class="mainWidth">
 
 
@@ -336,7 +358,7 @@
 
 <!--EIGHT SECTION-->
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="mainWidth">
             <div class="headerOurPortfolio margin">
                 <a href="#">
@@ -345,70 +367,120 @@
             </div>
             <div class="grid-container">
                <div class="row">
-                   <div class="col-12">
-                       <ul class="panel margin">
-                           <li class="smallButtons"><a>ALL</a></li>
-                           <li class="smallButtons"><a>WEB</a></li>
-                           <li class="smallButtons"><a>APPS</a></li>
-                           <li class="smallButtons"><a>ICONS</a></li>
-                       </ul>
-                   </div>
-                   <div class="row margin">
-                       <div class="col-4">
-                           <img class="gallery" src="images/photoGallery/photo.jpg">
-                           <h1 class="title">Neque Porro Quisquam</h1>
-                           <ul class="hashes">
-                               <li>apps,</li>
-                               <li>icons,</li>
-                               <li>ui</li>
-                           </ul>
+                   <div class="col-12 ">
+                   <ul class="panel margin">
+                       <li class="smallButtons pinkHover"><a>ALL</a></li>
+                       <li class="smallButtons pinkHover"><a>WEB</a></li>
+                       <li class="smallButtons pinkHover"><a>APPS</a></li>
+                       <li class="smallButtons pinkHover"><a>ICONS</a></li>
+                   </ul>
+               </div>
+                   <div class="portfolioGallery">
+                       <div class="row margin">
+                           <div class="col-4">
+                               <div class="hooverPosition">
+                                   <img class="gallery" src="images/photoGallery/photo.jpg" id="resizableImage">
+                                   <div class="overlay">
+                                       <span class="plus">+</span>
+                                   </div>
+                                   <div class="biggerPhoto">
+                                       <img src="images/photoGallery/photo.jpg">
+                                   </div>
+                               </div>
+                               <h1 class="title">Neque Porro Quisquam</h1>
+                               <ul class="hashes">
+                                   <li>apps,</li>
+                                   <li>icons,</li>
+                                   <li>ui</li>
+                               </ul>
+                           </div>
+                           <div class="col-4">
+                               <div class="hooverPosition">
+                                   <img class="gallery" src="images/photoGallery/photo2.jpg" id="resizableImage">
+                                   <div class="overlay">
+                                       <span class="plus">+</span>
+                                   </div>
+                                   <div class="biggerPhoto">
+                                       <img src="images/photoGallery/photo2.jpg">
+                                   </div>
+                               </div>
+                               <h1 class="title">Neque Porro Quisquam</h1>
+                               <ul class="hashes">
+                                   <li>apps,</li>
+                                   <li>icons,</li>
+                                   <li>ui</li>
+                               </ul>
+                           </div>
+                           <div class="col-4">
+                               <div class="hooverPosition">
+                                   <img class="gallery" src="images/photoGallery/photo3.jpg" id="resizableImage">
+                                   <div class="overlay">
+                                       <span class="plus">+</span>
+                                   </div>
+                                   <div class="biggerPhoto">
+                                       <img src="images/photoGallery/photo3.jpg">
+                                   </div>
+                               </div>
+                               <h1 class="title">Neque Porro Quisquam</h1>
+                               <ul class="hashes">
+                                   <li>apps,</li>
+                                   <li>icons,</li>
+                                   <li>ui</li>
+                               </ul>
+                           </div>
                        </div>
-                       <div class="col-4">
-                           <img class="gallery" src="images/photoGallery/photo2.jpg">
-                           <h1 class="title">Neque Porro Quisquam</h1>
-                           <ul class="hashes">
-                               <li>apps,</li>
-                               <li>icons,</li>
-                               <li>ui</li>
-                           </ul>
-                       </div>
-                       <div class="col-4">
-                           <img class="gallery" src="images/photoGallery/photo3.jpg">
-                           <h1 class="title">Neque Porro Quisquam</h1>
-                           <ul class="hashes">
-                               <li>apps,</li>
-                               <li>icons,</li>
-                               <li>ui</li>
-                           </ul>
-                       </div>
-                   </div>
-                   <div class="row margin">
-                       <div class="col-4">
-                           <img class="gallery" src="images/photoGallery/photo4.jpg">
-                           <h1 class="title">Neque Porro Quisquam</h1>
-                           <ul class="hashes">
-                               <li>apps,</li>
-                               <li>icons,</li>
-                               <li>ui</li>
-                           </ul>
-                       </div>
-                       <div class="col-4">
-                           <img class="gallery" src="images/photoGallery/photo5.jpg">
-                           <h1 class="title">Neque Porro Quisquam</h1>
-                           <ul class="hashes">
-                               <li>apps,</li>
-                               <li>icons,</li>
-                               <li>ui</li>
-                           </ul>
-                       </div>
-                       <div class="col-4">
-                           <img class="gallery" src="images/photoGallery/photo6.jpg">
-                           <h1 class="title">Neque Porro Quisquam</h1>
-                           <ul class="hashes">
-                               <li>apps,</li>
-                               <li>icons,</li>
-                               <li>ui</li>
-                           </ul>
+                       <div class="row margin">
+                           <div class="col-4">
+                               <div class="hooverPosition">
+                                   <img class="gallery" src="images/photoGallery/photo4.jpg" id="resizableImage">
+                                   <div class="overlay">
+                                       <span class="plus">+</span>
+                                   </div>
+                                   <div class="biggerPhoto">
+                                       <img src="images/photoGallery/photo4.jpg">
+                                   </div>
+                               </div>
+                               <h1 class="title">Neque Porro Quisquam</h1>
+                               <ul class="hashes">
+                                   <li>apps,</li>
+                                   <li>icons,</li>
+                                   <li>ui</li>
+                               </ul>
+                           </div>
+                           <div class="col-4">
+                               <div class="hooverPosition">
+                                   <img class="gallery" src="images/photoGallery/photo5.jpg" id="resizableImage">
+                                   <div class="overlay">
+                                       <span class="plus">+</span>
+                                   </div>
+                                   <div class="biggerPhoto">
+                                       <img src="images/photoGallery/photo5.jpg">
+                                   </div>
+                               </div>
+                               <h1 class="title">Neque Porro Quisquam</h1>
+                               <ul class="hashes">
+                                   <li>apps,</li>
+                                   <li>icons,</li>
+                                   <li>ui</li>
+                               </ul>
+                           </div>
+                           <div class="col-4">
+                               <div class="hooverPosition">
+                                   <img class="gallery" src="images/photoGallery/photo6.jpg" id="resizableImage">
+                                   <div class="overlay">
+                                       <span class="plus">+</span>
+                                   </div>
+                                   <div class="biggerPhoto">
+                                       <img src="images/photoGallery/photo6.jpg">
+                                   </div>
+                               </div>
+                               <h1 class="title">Neque Porro Quisquam</h1>
+                               <ul class="hashes">
+                                   <li>apps,</li>
+                                   <li>icons,</li>
+                                   <li>ui</li>
+                               </ul>
+                           </div>
                        </div>
                    </div>
                    <div class="col-12">
@@ -419,7 +491,7 @@
         </div>
     </section>
 
-    <section class="formulaire">
+    <section class="formulaire" id="contact">
         <div class="mainWidth">
             <div class="headerGetInTouch margin">
                 <a href="#">
@@ -449,7 +521,7 @@
                     </span>
                 </p>
                 <!--<div class="clear"></div>-->
-                <div class="mediaLogos">
+                <div class="mediaLogos stickyButtons">
                     <img src="images/icons/facebookIcon.png">
                     <img src="images/icons/tumblrIcon.png">
                     <img src="images/icons/googleIcon.png">
