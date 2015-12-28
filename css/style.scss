@@ -471,7 +471,11 @@ header{
   }
 }
 
-//SKILLS
+.slick-next:before, .slick-prev:before {
+  display: none;
+}
+
+  //SKILLS
 
   .skillBoxWeb, .skillBoxGraphic, .skillBoxHTML, .skillBoxUI {
     float: left;
@@ -542,7 +546,7 @@ header{
 }
 
 .slick-dots li button:before{
-  font-size: 50px !important;
+  font-size: 30px;
 }
 
 .quotesSlider {
@@ -551,7 +555,7 @@ header{
 
 .quotesSection{
   margin: 0 auto;
-  height: 200px;
+  height: 290px;
   width: 100%;
   display: inline-block;
   //margin-bottom: 6%;
@@ -560,13 +564,13 @@ header{
     box-sizing: border-box;
     border: 1px solid black;
     display: inline-block;
-    width: 100%;
+    width: 18%;
     font-size: 50%;
     margin-top: 8%;
     img {
-      width: 18%;
+      width: 100%;
       border-radius: 100%;
-      margin: 0 0 7% 40%;
+      margin: 0 0 0 40%;
 
     }
     h1{
