@@ -73,7 +73,7 @@ header{
     [class*='col-'] {
       float: left;
       min-height: 1px;
-      border: 1px solid red;
+      //border: 1px solid red;
     }
     @for $i from 1 through 12 {
       .col-#{$i} {
@@ -545,9 +545,9 @@ header{
     }
 }
 
-.slick-dots li button:before{
-  font-size: 30px;
-}
+.slick-dots li button::before{
+  font-size: 19px;
+  }
 
 .quotesSlider {
   width:100%;
@@ -559,16 +559,16 @@ header{
   width: 100%;
   display: inline-block;
   //margin-bottom: 6%;
-  border: 1px dashed red;
+  //border: 1px dashed red;
   .quotesPhoto {
     box-sizing: border-box;
-    border: 1px solid black;
+    //border: 1px solid black;
     display: inline-block;
-    width: 18%;
+    width: 100%;
     font-size: 50%;
     margin-top: 8%;
     img {
-      width: 100%;
+      width: 18%;
       border-radius: 100%;
       margin: 0 0 0 40%;
 

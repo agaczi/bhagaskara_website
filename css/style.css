@@ -191,7 +191,6 @@ header ul img {
 .grid-container [class*='col-'] {
   float: left;
   min-height: 1px;
-  border: 1px solid red;
 }
 .grid-container .col-1 {
   width: 8.33333%;
@@ -640,8 +639,8 @@ header ul img {
   color: #979797;
 }
 
-.slick-dots li button:before {
-  font-size: 30px;
+.slick-dots li button::before {
+  font-size: 19px;
 }
 
 .quotesSlider {
@@ -653,18 +652,16 @@ header ul img {
   height: 290px;
   width: 100%;
   display: inline-block;
-  border: 1px dashed red;
 }
 .quotesSection .quotesPhoto {
   box-sizing: border-box;
-  border: 1px solid black;
   display: inline-block;
-  width: 18%;
+  width: 100%;
   font-size: 50%;
   margin-top: 8%;
 }
 .quotesSection .quotesPhoto img {
-  width: 100%;
+  width: 18%;
   border-radius: 100%;
   margin: 0 0 0 40%;
 }
