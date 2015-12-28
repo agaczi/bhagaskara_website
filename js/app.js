@@ -1,13 +1,11 @@
-//STICKY MENU
 
 $(document).ready(function() {
 
 
-//HAMBURGER MENU
+// -------- // HAMBURGER MENU // -------- //
 
     function setMenu() {
-        $(window).on('resize', function() {
-            if ($(window).width() < 875) {
+            if ($(window).width() < 915) {
                 $('.hamburger').hide();
                 $('.menuBtn').show();
             } else {
@@ -15,7 +13,6 @@ $(document).ready(function() {
                 $('.menuBtn').hide();
                 $('.mobileMenu').hide();
             }
-        });
     }
 
     function setClick() {
@@ -24,10 +21,16 @@ $(document).ready(function() {
         });
     }
 
+
     setMenu();
+
+    $(window).on('resize', function() {
+        setMenu();
+    });
     setClick();
 
-//STICKY MENU
+
+// -------- // STICKY MENU // -------- //
 
     function stickyMenu() {
         var menu = $(".menu");
@@ -49,7 +52,7 @@ $(document).ready(function() {
     stickyMenu();
 
 
-////SLIDER MENU
+// -------- // SLIDER MENU // -------- //
 
     var member = document.getElementsByClassName('memberPhoto');
 
@@ -90,58 +93,7 @@ $(document).ready(function() {
 
     gallerySliderMenu();
 
-
-// VALIDATION FORMULAIRE
-
-
-    function checkValidate() {
-
-        var imie = $('#form').find("input#name");
-        var email = $('#form').find("input#email");
-        var textarea = $('#form').find("#text");
-        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-
-        var nameSpan = $('#form').find("span.formName");
-        var emailSpan = $('#form').find("span.formEmail");
-        var textSpan = $('#form').find("span.formText");
-
-
-        $(".buttonSendMessage").click(function () {
-
-            console.log("DKHDHD");
-            //sprawdzenie poprawnosci imienia
-
-            if ((imie.val().length >= 3) && (imie.val().length <= 10)) {
-                console.log('ok')
-            }
-            else {
-                console.log("bład");
-                nameSpan.show();
-            }
-
-            // sprawdzenie poprawnosci e-mail
-            if (re.test(email.val())) {
-                console.log('ok')
-            }
-            else {
-                console.log("bład");
-                emailSpan.show();
-            }
-
-            // sprawdzenie poprawnosci wiadomosci
-            if ((textarea.val().length > 0) && (textarea.val().length <= 100)) {
-                console.log('ok')
-            }
-            else {
-                console.log("bład");
-                textSpan.show();
-            }
-        })
-    }
-
-    checkValidate();
-
-//QUOTES SLIDER MENU
+// --------// QUOTES SLIDER MENU // -------- //
 
     function slickMenu() {
         $('.quotesSlider1').slick({
@@ -227,18 +179,46 @@ $(document).ready(function() {
         });
 
     }
-        scrollDown();
+    scrollDown();
 
 
+// -------- // PORTFOLIO // -------- //
+
+    var overlay = $('.overlay');
+    var gallery = $('.gallery');
+
+    overlay.hide();
+
+    function showShadow() {
+        $(gallery).mouseenter(function () {
+            $(this).next(overlay).show();
+        });
+        $(overlay).mouseleave(function () {
+            overlay.hide();
+        });
+    }
+
+    showShadow();
 
 
-    // grid gallery --->
+    var showBiggerPhoto = $('.biggerPhoto');
 
-   
+    showBiggerPhoto.hide();
 
+    function biggerPhoto() {
+        $(overlay).click(function(){
+            $(this).next(".biggerPhoto").show();
+        });
 
+        $(showBiggerPhoto).click(function(){
+            $(this).hide();
+        });
+    }
 
-    //// trick to prevent scrolling when slideshow is visible
+    biggerPhoto();
+
+    // trick to prevent scrolling when slideshow is visible
+
     //window.addEventListener( 'scroll', function() {
     //    if ( self.isSlideshowVisible ) {
     //        window.scrollTo( self.scrollPosition ? self.scrollPosition.x : 0, self.scrollPosition ? self.scrollPosition.y : 0 );
@@ -247,6 +227,56 @@ $(document).ready(function() {
     //        self.scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
     //    }
     //});
+
+
+
+// -------- // VALIDATION FORMULAIRE // -------- //
+
+
+    function checkValidate() {
+
+        var imie = $('#form').find("input#name");
+        var email = $('#form').find("input#email");
+        var textarea = $('#form').find("#text");
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+
+        var nameSpan = $('#form').find("span.formName");
+        var emailSpan = $('#form').find("span.formEmail");
+        var textSpan = $('#form').find("span.formText");
+
+
+        $(".buttonSendMessage").click(function () {
+
+            //sprawdzenie poprawnosci imienia
+            if ((imie.val().length >= 3) && (imie.val().length <= 10)) {
+                console.log('ok')
+            }
+            else {
+                console.log("bład");
+                nameSpan.show();
+            }
+
+            // sprawdzenie poprawnosci e-mail
+            if (re.test(email.val())) {
+                console.log('ok')
+            }
+            else {
+                console.log("bład");
+                emailSpan.show();
+            }
+
+            // sprawdzenie poprawnosci wiadomosci
+            if ((textarea.val().length > 0) && (textarea.val().length <= 100)) {
+                console.log('ok')
+            }
+            else {
+                console.log("bład");
+                textSpan.show();
+            }
+        })
+    }
+
+    checkValidate();
 
 
 });
